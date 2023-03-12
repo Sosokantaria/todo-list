@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+#mainTodoDiv {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  justify-content: center;
+  align-items: center;
+  background-color: blue;
+  border-radius: 5px;
+  gap: 10px;
+  padding: 10px;
+  & #bottomDiv {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    gap: 2px;
+    & #inputItem {
+      height: 3vh;
+      border-radius: 5px;
+      width: 50%;
+    }
+    & #addButton {
+      background-color: grey;
+      border-radius: 5px;
+      border-width: 0;
+      padding: 0px 20px;
+    }
+    #addButton:hover {
+      background-color: rgba(128, 128, 128, 0.807);
+    }
+  }
+}
+#ulItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  margin: 10px auto;
+  width: 50%;
+  & .listGroupItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    border-top:1px solid black;
+    padding: 10px;
+    text-decoration: none !important;
+  }
+ & .listGroupItemText{
+    background-color: rgba(0, 0, 255, 0.482);
+    padding: 4px;
+    border-radius: 5px;
+ }
+  & .listGroupItemChangedInput {
+    height: 3vh;
+    border-radius: 5px;
+    text-decoration: none !important;
+  }
+  & .listGroupItemTextChangeButton {
+    background-color: grey;
+    border-width: 0;
+    border-radius: 5px;
+    padding: 5px 20px;
+    text-decoration: none !important;
+    &:hover {
+      background-color: rgba(128, 128, 128, 0.807);
+    }
+  }
+  & .deleteIqon {
+    background-color: grey;
+    padding: 4px 8PX;
+    border-radius: 40px;
+    text-decoration: none !important;
+    &:hover {
+      background-color: rgba(128, 128, 128, 0.807);
+    }
+  }
+}
+.checked {
+  text-decoration: line-through;
+}
